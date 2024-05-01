@@ -121,14 +121,7 @@ body{
         padding: 0% 25% 0% 25%;
     }
     .rodape__conteudo{
-        gap: 5%;
-        width: 100%;
-        background-color: aliceblue;
-    }
-}
-
-@media (max-width:620px){
-    .rodape__conteudo{
+        padding-left: 5%;
         gap: 5%;
         width: 100%;
         background-color: aliceblue;
