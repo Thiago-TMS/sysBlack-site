@@ -24,6 +24,8 @@ body{
 }
 
 .cabecalho__logo{
+    display: flex;
+    justify-content: center;
     max-width: 200px;
 }
 
@@ -109,9 +111,16 @@ body{
     transition: 0.2s;
 } 
 
-@media (max-width:600px){
+@media (max-width:620px){
+    .cabecalho__nav{
+        gap: 1%;
+    }
+
+    .cabecalho__logo{
+        padding: 0% 25% 0% 25%;
+    }
     .rodape__conteudo{
-        gap: 10%;
+        gap: 5%;
         width: 100%;
     }
 }
