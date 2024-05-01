@@ -112,5 +112,6 @@ body{
 @media (max-width:600px){
     .rodape__conteudo{
         gap: 10%;
+        width: 100%;
     }
 }
