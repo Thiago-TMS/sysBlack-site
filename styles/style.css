@@ -26,7 +26,7 @@ body{
 .cabecalho__logo{
     display: flex;
     justify-content: center;
-    max-width: 200px;
+    max-width: 12.5rem;
 }
 
 .cabecalho__nav{
@@ -44,7 +44,7 @@ body{
 }
 
 .conteudo {
-    padding: 2% 15% 25% 15%;
+    padding: 5% 15% 20% 15%;
     display: flex;
     align-items: center;
     text-align: justify;
@@ -56,24 +56,27 @@ body{
     width: 62.5rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
     color: #5AC051;
     font-family: 'montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
+    text-align: justify;
+    width: 100%;
 
 }
 
 .conteudo__texto__titulo{
     color: aliceblue;
     font-family: 'Krona One', sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
 }
 
 .conteudo__texto__titulo__subtitulo{
     color: aliceblue;
     font-family: 'Krona One', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
+    
 }
 
 
@@ -85,6 +88,8 @@ body{
 .tabela__titulo {
     color: aliceblue;
     margin-bottom: 5%;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.875rem;
 }
 
 .tabela__conteudo{
@@ -94,26 +99,27 @@ body{
 }
 
 label {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     color: #5AC051; 
     font-family: 'montserrat', sans-serif;
+    font-size: 1.25rem;
 }
 
 form input, form textarea {
     width: 50%;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 0.9375rem;
+    border-radius: 0.3125rem;
     border: 1px solid #555;
     background-color: #222;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 } 
 
 button {
     padding: 10%;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     background-color: #5AC051;
     color: #fff;
     cursor: pointer;
@@ -129,8 +135,7 @@ button:hover {
     font-family: 'montserrat', sans-serif;
     font-size: 0.9rem;
     box-sizing: border-box;
-    padding: 2% 0% 2% 0px;
-    /* width: 100%; */
+    padding: 2% 0% 2% 0%;
 }
 
 .rodape__conteudo{
@@ -150,8 +155,8 @@ button:hover {
 }
 
 .imagem__rodape__contatos{
-    max-width: 15px;
-    max-height: 15px;
+    max-width: 0.9375rem;
+    max-height: 0.9375rem;
     margin-right: 2%;
 }
 
@@ -160,7 +165,7 @@ button:hover {
     transition: 0.2s;
 } 
 
-@media (max-width:720px){
+@media (max-width:620px){
     .cabecalho__nav{
         gap: 1%;
     }
