@@ -43,16 +43,17 @@ body{
     transition: 0.2s;
 }
 
-.conteudo{
+.conteudo {
     padding: 2% 15% 25% 15%;
     display: flex;
     align-items: center;
     text-align: justify;
+    flex-direction: column;
 
 }
 
 .conteudo__texto {
-    width: 1000px;
+    width: 62.5rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -76,13 +77,60 @@ body{
 }
 
 
+.tabela {
+    padding: 2% 15% 25% 15%;
+    text-align: center; 
+}
+
+.tabela__titulo {
+    color: aliceblue;
+    margin-bottom: 5%;
+}
+
+.tabela__conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #5AC051; 
+    font-family: 'montserrat', sans-serif;
+}
+
+form input, form textarea {
+    width: 50%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #222;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+} 
+
+button {
+    padding: 10%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5AC051;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f0;
+}
+
+
 .rodape{
     background-color:aliceblue;
     font-family: 'montserrat', sans-serif;
     font-size: 0.9rem;
     box-sizing: border-box;
     padding: 2% 0% 2% 0px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .rodape__conteudo{
@@ -112,7 +160,7 @@ body{
     transition: 0.2s;
 } 
 
-@media (max-width:620px){
+@media (max-width:720px){
     .cabecalho__nav{
         gap: 1%;
     }
@@ -121,7 +169,6 @@ body{
         padding: 0% 25% 0% 25%;
     }
     .rodape__conteudo{
-        padding-left: 5%;
         gap: 5%;
         width: 100%;
         background-color: aliceblue;
