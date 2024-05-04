@@ -19,14 +19,14 @@ body{
 
 .cabecalho{
     color: aliceblue;
-    padding: 0% 15% 0% 15%;
     gap: 10%;
 }
 
 .cabecalho__logo{
     display: flex;
     justify-content: center;
-    max-width: 12.5rem;
+    padding-left: 2%;
+    max-width: 13.5rem;
 }
 
 .cabecalho__nav{
@@ -36,6 +36,8 @@ body{
     justify-content: space-between;
     width: 100%;
     gap: 5%;
+    padding: 0% 15% 0% 15%;
+    box-sizing: border-box;
 }
 
 .cabecalho__nav__link:hover{
@@ -76,13 +78,13 @@ body{
     color: aliceblue;
     font-family: 'Krona One', sans-serif;
     font-size: 1.25rem;
-    
+
 }
 
 
 .tabela {
     padding: 2% 15% 25% 15%;
-    text-align: center; 
+    text-align: center;
 }
 
 .tabela__titulo {
@@ -100,7 +102,7 @@ body{
 
 label {
     margin-bottom: 0.625rem;
-    color: #5AC051; 
+    color: #5AC051;
     font-family: 'montserrat', sans-serif;
     font-size: 1.25rem;
 }
@@ -113,7 +115,7 @@ form input, form textarea {
     background-color: #222;
     box-sizing: border-box;
     margin-bottom: 1.25rem;
-} 
+}
 
 button {
     padding: 10%;
@@ -131,11 +133,18 @@ button:hover {
 
 
 .rodape{
-    background-color:aliceblue;
+    color: aliceblue;
     font-family: 'montserrat', sans-serif;
     font-size: 0.9rem;
     box-sizing: border-box;
-    padding: 2% 0% 2% 0%;
+    text-align: justify;
+}
+
+.rodape__logo{
+    display: flex;
+    justify-content: center;
+    padding-left: 2%;
+    max-width: 13.5rem;
 }
 
 .rodape__conteudo{
@@ -163,7 +172,7 @@ button:hover {
 .rodape__contatos__links:hover , .rodape__conteudo__uteis__links:hover{
     color: #5AC051;
     transition: 0.2s;
-} 
+}
 
 @media (max-width:620px){
     .cabecalho__nav{
