@@ -1,0 +1,8 @@
+Envio bem-sucedido!
+Curso: 1870375, Programação de Computadores  - Desd_1N_ (Not) _UCS-VL_UCS
+Avaliação: Novo exercício em 29/04/24
+
+Data de envio: 06/05/24 18:00
+Tamanho do envio: 3,6 KB
+Autor do envio: Thiago Morais da Silva UCS_Cst em Análise e Desenvolvimento de Sistemas_1N_20241
+Número de confirmação: 49fb51dc57c14902aa69930e523154a9

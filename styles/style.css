@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --global-primaria-color: rgb(41, 40, 40);
+    --global-secundaria-color: aliceblue;
+    --global-terciaria-color: #5AC051;
+    --global-primaria-font: 'Courier New', Courier, monospace;
+
+}
 
 *{
     margin: 0%;
@@ -9,48 +18,74 @@
 
 body{
     box-sizing: border-box;
-    background-color: rgb(41, 40, 40);
+    background-color: var(--global-primaria-color);
     background-image: url("/assets/background2.jpg");
     background-position: center;
     background-attachment: fixed ;
     background-size: cover;
     background-blend-mode: multiply;
+    font-family: var(--global-primaria-font);
 }
 
 .cabecalho{
-    color: aliceblue;
-    gap: 10%;
+    box-sizing: border-box;
+    display: block;
+    color: var(--global-secundaria-color);
 }
 
-.cabecalho__logo{
+.cabecalho__nome{
     display: flex;
-    justify-content: center;
-    padding-left: 2%;
-    max-width: 13.5rem;
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-content: space-between; */
+
+
 }
+
+.cabecalho__nome__logo{
+    padding: 0% 0% 2% 2%;
+}
+
+.nome {
+    position: absolute;
+    padding: 0% 0% 0.2% 35.7%;
+    font-size: 70px;
+    color:rgb(30, 63, 27) ;
+}
+
+  .nome__baixo {
+    position: absolute;
+    padding-left: 36%;
+    color:var(--global-terciaria-color);
+    font-size: 70px;
+  }
 
 .cabecalho__nav{
     display: flex;
-    font-family: 'montserrat', sans-serif;
     font-size: 0.9rem;
     justify-content: space-between;
-    width: 100%;
     gap: 5%;
     padding: 0% 15% 0% 15%;
-    box-sizing: border-box;
+    width: auto;
+}
+
+.cabecalho__nav__link{
+    border-style: solid;
+    padding: 0.5% 2% 0.5% 2%;
+    border-radius: 0.625rem;
 }
 
 .cabecalho__nav__link:hover{
-    color:#5AC051 ;
+    color:var(--global-terciaria-color) ;
     transition: 0.2s;
 }
 
 .conteudo {
-    padding: 5% 15% 20% 15%;
     display: flex;
-    align-items: center;
+    padding: 4% 15% 4% 15%;
     text-align: justify;
     flex-direction: column;
+    color: var(--global-terciaria-color);
 
 }
 
@@ -58,29 +93,84 @@ body{
     width: 62.5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.625rem;
-    color: #5AC051;
-    font-family: 'montserrat', sans-serif;
+    gap: 0.725rem;
     font-size: 1.25rem;
     text-align: justify;
     width: 100%;
+    padding-bottom: 1%;
 
 }
 
 .conteudo__texto__titulo{
-    color: aliceblue;
-    font-family: 'Krona One', sans-serif;
+    color: var(--global-secundaria-color);
+    font-weight: 900;
     font-size: 1.875rem;
     text-align: center;
 }
 
 .conteudo__texto__titulo__subtitulo{
-    color: aliceblue;
-    font-family: 'Krona One', sans-serif;
+    color: var(--global-secundaria-color);
+    font-weight: 900;
     font-size: 1.25rem;
 
 }
 
+table{
+    background-color:#000512
+}
+
+.tabela__curso{
+    display: flex;
+    gap: 1%;
+}
+
+.tabela__curso__continuacao{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin: 1%;
+}
+
+.curso{
+    border: 2px solid var(--global-secundaria-color);
+    border-radius: 5px;
+    width: 35%;
+    height: auto;
+}
+
+
+.titulo{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    color: var(--global-secundaria-color);
+    font-weight: 900;
+    font-size: 1rem;
+
+}
+
+.descricao{
+    text-align: justify;
+    padding: 0% 0% 5% 0%;
+}
+
+.img{
+    width: auto;
+    max-width: 20rem;
+    max-height: 10rem;
+}
+
+.botao{
+    color: var(--global-secundaria-color);
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0% 25%;
+
+}
 
 .tabela {
     padding: 2% 15% 25% 15%;
@@ -88,9 +178,9 @@ body{
 }
 
 .tabela__titulo {
-    color: aliceblue;
+    color: var(--global-secundaria-color);
     margin-bottom: 5%;
-    font-family: 'Krona One', sans-serif;
+    font-weight: 900;
     font-size: 1.875rem;
 }
 
@@ -102,8 +192,7 @@ body{
 
 label {
     margin-bottom: 0.625rem;
-    color: #5AC051;
-    font-family: 'montserrat', sans-serif;
+    color: var(--global-terciaria-color);
     font-size: 1.25rem;
 }
 
@@ -122,69 +211,79 @@ button {
     padding: 0.625rem 1.25rem;
     border: none;
     border-radius: 0.3125rem;
-    background-color: #5AC051;
-    color: #fff;
+    background-color: var(--global-terciaria-color);
+    color: var(--global-secundaria-color);
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0f0;
+button:hover, .botao:hover {
+    color: var(--global-terciaria-color);
 }
 
 
 .rodape{
-    color: aliceblue;
-    font-family: 'montserrat', sans-serif;
+    color: var(--global-secundaria-color);
     font-size: 0.9rem;
     box-sizing: border-box;
     text-align: justify;
-}
-
-.rodape__logo{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-left: 2%;
-    max-width: 13.5rem;
+    padding-bottom: 1%;
+
 }
 
-.rodape__conteudo{
-    display: flex;
-    gap: 40%;
-}
-
-.rodape__conteudo__uteis{
+.imagem__rodape{
     display: flex;
     flex-direction: column;
-    padding: 0% 0% 0% 10%;
+    max-width: 2rem;
+    max-height: 2rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-.rodape__contatos{
-    display: flex;
-    flex-direction: column;
-}
-
-.imagem__rodape__contatos{
-    max-width: 0.9375rem;
-    max-height: 0.9375rem;
-    margin-right: 2%;
-}
-
-.rodape__contatos__links:hover , .rodape__conteudo__uteis__links:hover{
-    color: #5AC051;
+.imagem__rodape:hover{
+    color: var(--global-terciaria-color);
     transition: 0.2s;
 }
 
-@media (max-width:620px){
+@media (max-width:790px){
+
     .cabecalho__nav{
+        display: flex;
         gap: 1%;
+        padding: 0% 5% 0% 5%;
+        width: auto;
+    }
+    
+    .cabecalho__nome{
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .cabecalho__nome__logo{
+        padding: 1% 0% 2% 2%;
+    }
+    
+    .nome {
+        /* position: absolute;
+        padding: 0% 0% 100% 35.7%; */
+        font-size: 70px;
+        color:rgb(30, 63, 27) ;
+    }
+    
+      .nome__baixo {
+        /* position: absolute;
+        padding-left: 36%; */
+        color:var(--global-terciaria-color);
+        font-size: 70px;
+      }
+
+    .conteudo{
+        padding: 5% 0% 8% 0%;
+        width: auto;
     }
 
-    .cabecalho__logo{
-        padding: 0% 25% 0% 25%;
-    }
-    .rodape__conteudo{
-        gap: 5%;
-        width: 100%;
-        background-color: aliceblue;
-    }
 }
