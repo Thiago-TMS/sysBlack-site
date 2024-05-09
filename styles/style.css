@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
@@ -35,9 +34,7 @@ body{
 
 .cabecalho__nome{
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
-    /* justify-content: space-between; */
 
 
 }
@@ -268,15 +265,11 @@ button:hover, .botao:hover {
     }
     
     .nome {
-        /* position: absolute;
-        padding: 0% 0% 100% 35.7%; */
         font-size: 70px;
         color:rgb(30, 63, 27) ;
     }
     
       .nome__baixo {
-        /* position: absolute;
-        padding-left: 36%; */
         color:var(--global-terciaria-color);
         font-size: 70px;
       }
@@ -285,5 +278,75 @@ button:hover, .botao:hover {
         padding: 5% 0% 8% 0%;
         width: auto;
     }
+    
+    .tabela__curso{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1%;
+    }
+    
+    .tabela__curso__continuacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1%;
+    }
+    
+    .curso{
+        border: 2px solid var(--global-secundaria-color);
+        border-radius: 5px;
+        width: auto;
+        height: auto;
+    }
+    
+    
+    .titulo{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .descricao{
+        text-align: justify;
+        padding: 0% 0% 5% 0%;
+    }
+    
 
+    form input, form textarea {
+        width: 90%;
+    }
+    
+
+}
+
+@media (max-width:550px){
+
+    .cabecalho__nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho__nav__link{
+        padding: 10px 15px 10px 15px ;
+    }
+
+    .cabecalho__nome{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .cabecalho__nome__logo{
+        padding: 20% 0 5% 0;
+    }
+    .nome{
+        padding: 0% 0% 0.2% 0.7%;
+    }
+
+    .nome__baixo{
+        padding: 0%;
+        padding: 1%;
+    }
 }
