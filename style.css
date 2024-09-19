@@ -1,177 +1,341 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --global-primaria-color: rgb(41, 40, 40);
+    --global-secundaria-color: aliceblue;
+    --global-terciaria-color: #00ff00;
+    --global-quarta-color: #dacb0f;
+    --global-primaria-font: 'Courier New', Courier, monospace;
+
+}
 
 *{
     margin: 0%;
     padding: 0%;
     text-decoration:none;
     color: inherit;
+    unicode-bidi: normal;
+
 }
+
 
 body{
     box-sizing: border-box;
-    background-color: rgb(41, 40, 40);
+    background-color: var(--global-primaria-color);
     background-image: url("/assets/background2.jpg");
     background-position: center;
     background-attachment: fixed ;
     background-size: cover;
     background-blend-mode: multiply;
+    font-family: var(--global-primaria-font);
 }
+
+                                  /* CABEÇALHO */
 
 .cabecalho{
-    color: aliceblue;
-    padding: 0% 15% 0% 15%;
-    gap: 10%;
+    box-sizing: border-box;
+    display: block;
+    color: var(--global-secundaria-color);
 }
 
-.cabecalho__logo{
+.cabecalho__nome{
     display: flex;
-    justify-content: center;
-    max-width: 200px;
+    align-items: center;
+
+
 }
+
+.cabecalho__nome__logo{
+    padding: 0% 0% 1% 2%;
+}
+
+.nome {
+    position: absolute;
+    padding: 0% 0% 0.2% 37.7%;
+    font-size: 60px;
+    color:rgb(30, 63, 27) ;
+}
+
+  .nome__baixo {
+    position: absolute;
+    padding-left: 38%;
+    color:var(--global-terciaria-color);
+    font-size: 60px;
+  }
 
 .cabecalho__nav{
     display: flex;
-    font-family: 'montserrat', sans-serif;
     font-size: 0.9rem;
     justify-content: space-between;
-    width: 100%;
     gap: 5%;
+    padding: 0% 15% 0% 15%;
+    width: auto;
+}
+
+.cabecalho__nav__link{
+    border-style: solid;
+    padding: 0.5% 2% 0.3% 2%;
+    border-radius: 0.625rem;
 }
 
 .cabecalho__nav__link:hover{
-    color:#5AC051 ;
-    transition: 0.2s;
+    color:var(--global-terciaria-color) ;
+    transition: 1s;
 }
 
+                             /* TODAS AS PAGINAS */
+
 .conteudo {
-    padding: 2% 15% 25% 15%;
     display: flex;
-    align-items: center;
-    text-align: justify;
+    padding: 2% 15% 0% 15%;
     flex-direction: column;
+    color: var(--global-terciaria-color);
 
 }
 
 .conteudo__texto {
-    width: 1000px;
-    display: flex;
+    display: flex;               /* se não utilizar o display: flex, o gap não funciona*/
     flex-direction: column;
-    gap: 10px;
-    color: #5AC051;
-    font-family: 'montserrat', sans-serif;
-    font-size: 20px;
+    gap: 0.625rem;
+    font-size: 1.1rem;
+    text-align: justify;
+    padding-bottom: 1%;
 
 }
 
 .conteudo__texto__titulo{
-    color: aliceblue;
-    font-family: 'Krona One', sans-serif;
-    font-size: 30px;
+    color: var(--global-quarta-color);
+    font-weight: 900;
+    font-size: 1.875rem;
     text-align: center;
 }
 
 .conteudo__texto__titulo__subtitulo{
-    color: aliceblue;
-    font-family: 'Krona One', sans-serif;
-    font-size: 20px;
+    color: var(--global-quarta-color);
+    font-weight: 900;
+    font-size: 1.25rem;
+
+}
+
+.clique_aqui{
+    color: var(--global-quarta-color);
 }
 
 
-.tabela {
-    padding: 2% 15% 25% 15%;
-    text-align: center; 
+                                         /* TREINAMENTO */
+
+
+.tabela__curso{
+    display: flex;
+    gap: 0.5%;
 }
 
+
+.curso{
+    background-color:#000512;
+    border: 2px solid var(--global-secundaria-color);
+    border-radius: 10px;
+    height: 200px;
+    width: 400px;
+}
+
+
+.titulo{
+    display: flex;
+    color: var(--global-quarta-color);
+    font-weight: 900;
+    font-size: 1rem;
+
+}
+
+
+#um{
+    padding-bottom: 50%;
+}
+
+#dois{
+    padding-bottom: 40%;
+}
+
+#tres{
+    padding-bottom: 20%;
+}
+
+#quatro{
+    padding-bottom: 20%;
+}
+
+#cinco{
+    padding-bottom: 10%;
+}
+
+.botao{
+    color: var(--global-secundaria-color);
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 0% 15%;
+}
+
+
+
+                                               /* CONTATOS */
+
+.tabela{
+    text-align: center;
+    padding-top: 2%;
+    box-sizing: border-box;
+
+}
 .tabela__titulo {
-    color: aliceblue;
-    margin-bottom: 5%;
+    color: var(--global-quarta-color);
+    margin-bottom: 2%;
+    font-weight: 900;
+    font-size: 1.875rem;
 }
 
 .tabela__conteudo{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 25% 0 25%;
+
 }
 
 label {
-    margin-bottom: 10px;
-    color: #5AC051; 
-    font-family: 'montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 2%;
+    color: var(--global-terciaria-color);
+    font-size: 1.25rem;
+    width: 100%;
+    justify-content: space-between;
 }
 
+
 form input, form textarea {
-    width: 50%;
-    padding: 15px;
-    border-radius: 5px;
+    width: 75%;
+    padding: 0.5375rem;
+    border-radius: 0.3125rem;
     border: 1px solid #555;
     background-color: #222;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-} 
+}
 
 button {
     padding: 10%;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 5px;
-    background-color: #5AC051;
-    color: #fff;
+    border-radius: 0.3125rem;
+    background-color: var(--global-primaria-color);
+    color: var(--global-secundaria-color);
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0f0;
+button:hover, .botao:hover {
+    background-color: var(--global-terciaria-color);
+    transition: 1s;
 }
 
 
 .rodape{
-    background-color:aliceblue;
-    font-family: 'montserrat', sans-serif;
+    color: var(--global-secundaria-color);
     font-size: 0.9rem;
     box-sizing: border-box;
-    padding: 2% 0% 2% 0px;
-    /* width: 100%; */
-}
-
-.rodape__conteudo{
-    display: flex;
-    gap: 40%;
-}
-
-.rodape__conteudo__uteis{
+    text-align: justify;
     display: flex;
     flex-direction: column;
-    padding: 0% 0% 0% 10%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.2%;
+    margin-top: 1%;
+
 }
 
-.rodape__contatos{
+.imagem__rodape{
     display: flex;
     flex-direction: column;
+    max-width: 2rem;
+    max-height: 2rem;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
-.imagem__rodape__contatos{
-    max-width: 15px;
-    max-height: 15px;
-    margin-right: 2%;
-}
-
-.rodape__contatos__links:hover , .rodape__conteudo__uteis__links:hover{
-    color: #5AC051;
+.imagem__rodape:hover{
+    color: var(--global-terciaria-color);
     transition: 0.2s;
-} 
+}
 
-@media (max-width:620px){
+@media (max-width:790px){
+
     .cabecalho__nav{
+        display: flex;
+        gap: 1%;
+        padding: 0% 5% 0% 5%;
+        width: auto;
+    }
+
+    .conteudo{
+        padding: 5% 0% 8% 0%;
+        width: auto;
+    }
+
+    .tabela__curso{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         gap: 1%;
     }
 
-    .cabecalho__logo{
-        padding: 0% 25% 0% 25%;
+    .tabela__curso__continuacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1%;
     }
-    .rodape__conteudo{
-        padding:2% 0% 2% 0%; 
-        gap: 5%;
-        width: 100%;
-        background-color: aliceblue;
+
+    .curso{
+        width: auto;
+        height: auto;
+    }
+
+
+    form input, form textarea {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width:550px){
+
+    .cabecalho__nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho__nav__link{
+        padding: 10px 15px 10px 15px ;
+    }
+
+    .cabecalho__nome{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .cabecalho__nome__logo{
+        padding: 20% 0 5% 0;
+    }
+    .nome{
+        padding: 0% 0% 0.2% 0.7%;
+    }
+
+    .nome__baixo{
+        padding: 0%;
+        padding: 1%;
     }
 }
