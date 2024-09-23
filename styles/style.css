@@ -135,7 +135,7 @@ body{
     background-color:#000512;
     border: 2px solid var(--global-secundaria-color);
     border-radius: 10px;
-    height: 200px;
+    height: 250px;
     width: 400px;
 }
 
@@ -150,11 +150,11 @@ body{
 
 
 #um{
-    padding-bottom: 50%;
+    padding-bottom: 53%;
 }
 
 #dois{
-    padding-bottom: 40%;
+    padding-bottom: 42%;
 }
 
 #tres{
@@ -182,8 +182,8 @@ body{
 
 
 
-                                               /* CONTATOS */
-
+                                 /* CONTATOS */
+    
 .tabela{
     text-align: center;
     padding-top: 2%;
@@ -318,6 +318,9 @@ button:hover, .botao:hover {
     }
 
     .cabecalho__nav__link{
+        display: flex;
+        justify-content: center;
+        width: 130px;
         padding: 10px 15px 10px 15px ;
     }
 
@@ -328,14 +331,23 @@ button:hover, .botao:hover {
 
 
     .cabecalho__nome__logo{
-        padding: 20% 0 5% 0;
+        padding: 12% 0 6% 0;
     }
     .nome{
-        padding: 0% 0% 0.2% 0.7%;
+        padding: 0% 0% 0.0% 0.7%;
     }
 
     .nome__baixo{
         padding: 0%;
-        padding: 1%;
+        padding: 0%;
+    }
+
+    .tabela__conteudo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 10% 10%;
+        
+        }
     }
 }
